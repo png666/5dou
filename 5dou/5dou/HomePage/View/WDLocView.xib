@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WDLocView">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="226"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="当前位置" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4e-QA-e0t">
+                    <frame key="frameInset" minX="15" minY="10" width="40" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQE-1J-WPY">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psm-bS-Moh">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8uN-2O-1iv">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Lzv-Ue-xRY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="选择其他城市">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="其他城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urp-Cp-d7y">
+                    <frame key="frameInset" minX="15" minY="154" width="40" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iez-m9-cwV">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xSW-5D-nWx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="定位当前城市">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="psm-bS-Moh" firstAttribute="top" secondItem="PQE-1J-WPY" secondAttribute="bottom" constant="10" id="0vY-Gg-f4u"/>
+                <constraint firstItem="Iez-m9-cwV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="3mL-Qd-mhi"/>
+                <constraint firstAttribute="trailing" secondItem="8uN-2O-1iv" secondAttribute="trailing" constant="15" id="52I-ze-jLj"/>
+                <constraint firstItem="8uN-2O-1iv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="5OZ-SP-eQa"/>
+                <constraint firstItem="urp-Cp-d7y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="8uj-Da-EFL"/>
+                <constraint firstAttribute="trailing" secondItem="PQE-1J-WPY" secondAttribute="trailing" constant="10" id="CYf-eh-BLi"/>
+                <constraint firstItem="Iez-m9-cwV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="GvM-39-nZ8"/>
+                <constraint firstItem="H4e-QA-e0t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="NuA-AF-o9j"/>
+                <constraint firstAttribute="bottom" secondItem="8uN-2O-1iv" secondAttribute="bottom" constant="10" id="NvX-FB-jgx"/>
+                <constraint firstItem="Iez-m9-cwV" firstAttribute="top" secondItem="H4e-QA-e0t" secondAttribute="bottom" constant="10" id="PDA-M0-Hk8"/>
+                <constraint firstAttribute="trailing" secondItem="Iez-m9-cwV" secondAttribute="trailing" constant="15" id="PZ4-P5-Y7z"/>
+                <constraint firstItem="H4e-QA-e0t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Pie-nV-jgs"/>
+                <constraint firstItem="urp-Cp-d7y" firstAttribute="top" secondItem="psm-bS-Moh" secondAttribute="bottom" constant="8" id="Spt-ha-YEj"/>
+                <constraint firstItem="8uN-2O-1iv" firstAttribute="top" secondItem="urp-Cp-d7y" secondAttribute="bottom" constant="10" id="WCr-r1-AZY"/>
+                <constraint firstAttribute="trailing" secondItem="psm-bS-Moh" secondAttribute="trailing" constant="15" id="WUs-Lr-e2u"/>
+                <constraint firstItem="PQE-1J-WPY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Wkz-Cy-r4Y"/>
+                <constraint firstItem="PQE-1J-WPY" firstAttribute="top" secondItem="Iez-m9-cwV" secondAttribute="bottom" constant="10" id="Xtj-QW-Kgo"/>
+                <constraint firstItem="psm-bS-Moh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="aem-78-fzW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GvM-39-nZ8"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="hotCityView" destination="psm-bS-Moh" id="t0H-C7-yr1"/>
+                <outlet property="nowLocationBtn" destination="Iez-m9-cwV" id="VDX-ex-bKv"/>
+                <outlet property="otherLocatonBtn" destination="8uN-2O-1iv" id="hWc-e7-hZw"/>
+            </connections>
+            <point key="canvasLocation" x="246.5" y="325"/>
+        </view>
+    </objects>
+</document>

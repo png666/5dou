@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="WDSelectPhotoViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传截图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNf-QJ-mRQ">
+                        <rect key="frame" x="14" y="14" width="65.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j7a-dU-pLi">
+                        <rect key="frame" x="14.5" y="43.5" width="318" height="66"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Ngk-6Q-Lpa">
+                            <size key="itemSize" width="63" height="63"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B20-Ai-QCH">
+                        <rect key="frame" x="0.0" y="118.5" width="347" height="0.5"/>
+                        <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="3Yt-ot-EjD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="B20-Ai-QCH" secondAttribute="trailing" id="4jb-kb-C4m"/>
+                    <constraint firstAttribute="bottom" secondItem="B20-Ai-QCH" secondAttribute="bottom" id="Qmj-t3-UGd"/>
+                    <constraint firstItem="MNf-QJ-mRQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14.5" id="QsX-te-TUc"/>
+                    <constraint firstItem="MNf-QJ-mRQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="Te6-W0-TP7"/>
+                    <constraint firstAttribute="trailing" secondItem="j7a-dU-pLi" secondAttribute="trailing" constant="14.5" id="boI-bd-urg"/>
+                    <constraint firstAttribute="bottom" secondItem="j7a-dU-pLi" secondAttribute="bottom" constant="10" id="dfB-hn-CYv"/>
+                    <constraint firstItem="j7a-dU-pLi" firstAttribute="top" secondItem="MNf-QJ-mRQ" secondAttribute="bottom" constant="10" id="fbO-Pn-eNm"/>
+                    <constraint firstItem="j7a-dU-pLi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14.5" id="ocf-b1-deE"/>
+                    <constraint firstItem="B20-Ai-QCH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="txs-3L-dE7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selectedPhotoCollection" destination="j7a-dU-pLi" id="6N0-ue-1il"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="85"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WDActivityCell" rowHeight="180" id="KGk-i7-Jjw" customClass="WDActivityCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="184.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70M-MZ-v3x">
+                        <rect key="frame" x="10" y="10" width="355" height="175"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-4P-je0">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="GEX-e2-t3z"/>
+                                    <constraint firstAttribute="height" constant="140" id="cCD-1V-krV"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvy-Gc-xH5">
+                                <rect key="frame" x="0.0" y="140" width="355" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="校妆暑期快报" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkV-ig-7dl">
+                                        <rect key="frame" x="10" y="8.5" width="285" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16天前" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nX-Vi-ona">
+                                        <rect key="frame" x="295" y="10.5" width="50" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0FR-RH-sIH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="3nX-Vi-ona" firstAttribute="leading" secondItem="bkV-ig-7dl" secondAttribute="trailing" id="2Hr-2p-FtD"/>
+                                    <constraint firstItem="bkV-ig-7dl" firstAttribute="centerY" secondItem="vvy-Gc-xH5" secondAttribute="centerY" id="K7J-Rv-T8c"/>
+                                    <constraint firstItem="bkV-ig-7dl" firstAttribute="leading" secondItem="vvy-Gc-xH5" secondAttribute="leading" constant="10" id="ZRp-wy-anO"/>
+                                    <constraint firstItem="3nX-Vi-ona" firstAttribute="bottom" secondItem="bkV-ig-7dl" secondAttribute="bottom" id="a4u-Z7-AmE"/>
+                                    <constraint firstAttribute="trailing" secondItem="3nX-Vi-ona" secondAttribute="trailing" constant="10" id="aee-z6-JiT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vvy-Gc-xH5" firstAttribute="top" secondItem="SdK-4P-je0" secondAttribute="bottom" id="4oR-rz-f8J"/>
+                            <constraint firstAttribute="bottom" secondItem="vvy-Gc-xH5" secondAttribute="bottom" id="7H6-ow-1GF"/>
+                            <constraint firstAttribute="height" constant="175" id="XJr-F3-Xxv"/>
+                            <constraint firstItem="vvy-Gc-xH5" firstAttribute="leading" secondItem="70M-MZ-v3x" secondAttribute="leading" id="ZYG-TX-8mx"/>
+                            <constraint firstAttribute="trailing" secondItem="vvy-Gc-xH5" secondAttribute="trailing" id="ai0-BH-V6q"/>
+                            <constraint firstAttribute="trailing" secondItem="SdK-4P-je0" secondAttribute="trailing" id="ati-nG-IKS"/>
+                            <constraint firstItem="SdK-4P-je0" firstAttribute="top" secondItem="70M-MZ-v3x" secondAttribute="top" id="cKn-t8-8qK"/>
+                            <constraint firstItem="SdK-4P-je0" firstAttribute="leading" secondItem="70M-MZ-v3x" secondAttribute="leading" id="d78-pA-1Uz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="70M-MZ-v3x" secondAttribute="trailing" constant="10" id="D6x-El-k8d"/>
+                    <constraint firstItem="70M-MZ-v3x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QC5-yT-IdN"/>
+                    <constraint firstItem="70M-MZ-v3x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dfg-QW-chk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="activityImageView" destination="SdK-4P-je0" id="7Gy-39-ogt"/>
+                <outlet property="activityTime" destination="3nX-Vi-ona" id="UXn-JE-MzT"/>
+                <outlet property="activityTitle" destination="bkV-ig-7dl" id="lEf-PJ-IDX"/>
+                <outlet property="bgView" destination="70M-MZ-v3x" id="fPZ-Te-Ah5"/>
+            </connections>
+            <point key="canvasLocation" x="420.5" y="319.5"/>
+        </tableViewCell>
+    </objects>
+</document>

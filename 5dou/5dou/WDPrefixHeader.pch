@@ -1,0 +1,61 @@
+
+
+
+
+//
+//  WDPrefixHeader.pch
+//  5dou
+//
+//  Created by rdyx on 16/8/28.
+//  Copyright © 2016年 吾逗科技. All rights reserved.
+//
+
+#ifndef WDPrefixHeader_pch
+#define WDPrefixHeader_pch
+
+
+
+#ifdef __IPHONE_9_0
+//(属于iOS9以后)
+#define IOS_9 1
+#else
+// (属于iOS9以前)
+#define IOS_9 0
+
+
+#endif
+
+#import "DEFINE.h"
+#import "WD_API.h"
+#import "WDNetworkClient.h"
+#import "AFNetworking.h"
+//#import "MBProgressHUD.h"
+#import "AFToast.h"
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "UIView+Sizes.h"
+#import <UMMobClick/MobClick.h>
+#import "UIViewController+Swizzled.h"
+
+#define USER_DEFAULT  [NSUserDefaults standardUserDefaults]
+
+#define SERVER_NAME ([USER_DEFAULT objectForKey:@"URLAPI"] ? [USER_DEFAULT objectForKey:@"URLAPI"] : @"https://app-server-xiongan.youedata.com")
+
+#define GetURLWith(tag) \
+({\
+NSString *url=@"";\
+if (tag==1)\
+url=@"https://app-server-xiongan.youedata.com";\
+else if (tag==2)\
+url=@"http://210.13.50.98:10141/appserver";\
+[USER_DEFAULT setObject:url forKey:@"URLAPI"];\
+[USER_DEFAULT synchronize];\
+(url);\
+})\
+
+
+
+
+
+
+#endif /* WDPrefixHeader_pch */

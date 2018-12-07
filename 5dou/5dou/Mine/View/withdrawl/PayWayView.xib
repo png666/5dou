@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PayWayView">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-4H-MHE">
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Fk-Oe-iEY">
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="I3E-KU-3hm"/>
+                                <constraint firstAttribute="width" constant="258" id="rew-Bh-qkR"/>
+                            </constraints>
+                            <state key="normal" title="提现到微信钱包" image="weix">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="weixinAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="CGp-et-i63"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择提现" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiB-FF-0Tp">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="bKK-cc-pgg"/>
+                                <constraint firstAttribute="width" constant="72" id="ozw-WT-jLW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="161-Ke-vFe">
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="M3G-4n-1u6"/>
+                            </constraints>
+                            <state key="normal" title="提现到支付宝" image="ali">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="weixinAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Z6y-oT-noO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tla-2w-PLD">
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HD6-rH-Vc7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="weixinAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="lD5-xW-ruT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="7Fk-Oe-iEY" firstAttribute="centerX" secondItem="Jqb-4H-MHE" secondAttribute="centerX" id="5Ly-x5-kcV"/>
+                        <constraint firstItem="161-Ke-vFe" firstAttribute="centerX" secondItem="Jqb-4H-MHE" secondAttribute="centerX" id="GcB-KS-dxV"/>
+                        <constraint firstItem="FiB-FF-0Tp" firstAttribute="top" secondItem="Jqb-4H-MHE" secondAttribute="top" constant="19" id="HvL-gL-oh0"/>
+                        <constraint firstItem="Tla-2w-PLD" firstAttribute="top" secondItem="161-Ke-vFe" secondAttribute="bottom" constant="10" id="QCI-jK-yWt"/>
+                        <constraint firstItem="7Fk-Oe-iEY" firstAttribute="top" secondItem="Jqb-4H-MHE" secondAttribute="top" constant="63" id="SMo-Np-imH"/>
+                        <constraint firstItem="161-Ke-vFe" firstAttribute="leading" secondItem="Jqb-4H-MHE" secondAttribute="leading" constant="12" id="UP0-Br-Tfl"/>
+                        <constraint firstItem="FiB-FF-0Tp" firstAttribute="leading" secondItem="Jqb-4H-MHE" secondAttribute="leading" constant="105" id="YWG-tQ-hm3"/>
+                        <constraint firstItem="Tla-2w-PLD" firstAttribute="trailing" secondItem="7Fk-Oe-iEY" secondAttribute="trailing" id="ih9-0w-IUp"/>
+                        <constraint firstItem="161-Ke-vFe" firstAttribute="top" secondItem="7Fk-Oe-iEY" secondAttribute="bottom" constant="10" id="lFm-Ke-ngv"/>
+                        <constraint firstItem="Tla-2w-PLD" firstAttribute="leading" secondItem="7Fk-Oe-iEY" secondAttribute="leading" id="wwu-K3-AFN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Jqb-4H-MHE" secondAttribute="bottom" constant="5" id="KZp-5p-F6b"/>
+                <constraint firstItem="Jqb-4H-MHE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="MNu-Ae-fh7"/>
+                <constraint firstItem="Jqb-4H-MHE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ffO-gJ-l3x"/>
+                <constraint firstAttribute="trailing" secondItem="Jqb-4H-MHE" secondAttribute="trailing" constant="5" id="gJc-dv-jPf"/>
+                <constraint firstItem="Jqb-4H-MHE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="lIb-0d-kBj"/>
+                <constraint firstItem="Jqb-4H-MHE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="rDd-B5-g3A"/>
+                <constraint firstItem="Jqb-4H-MHE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="yVY-qZ-BNy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="aliBtn" destination="161-Ke-vFe" id="OvV-b5-AnR"/>
+                <outlet property="bgView" destination="Jqb-4H-MHE" id="AoX-ZJ-bkH"/>
+                <outlet property="cancelBtn" destination="Tla-2w-PLD" id="Kgv-1A-QUb"/>
+                <outlet property="weixinBtn" destination="7Fk-Oe-iEY" id="0AR-Xn-ViF"/>
+            </connections>
+            <point key="canvasLocation" x="-63" y="-227"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ali" width="17" height="15"/>
+        <image name="weix" width="17" height="15"/>
+    </resources>
+</document>

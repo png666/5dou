@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5c3e5acd-e9db-44d8-9197-7e81b01ecc35++1999",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "5c3e5acd-e9db-44d8-9197-7e81b01ecc35++1999" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5c3e5acd-e9db-44d8-9197-7e81b01ecc35++1999" : 0,
+    "4D02968D3EF30FB14E195976E6A484966D95A35D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB1A4FC6-91EF-4736-922E-3960EBC2E79C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5c3e5acd-e9db-44d8-9197-7e81b01ecc35++1999" : "5dou_2.0git\/",
+    "4D02968D3EF30FB14E195976E6A484966D95A35D" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "5dou",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "5dou.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git.oschina.net:fivedou\/wu5dou.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4D02968D3EF30FB14E195976E6A484966D95A35D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/svn.5dou.cn\/svn\/wudou",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5c3e5acd-e9db-44d8-9197-7e81b01ecc35++1999"
+    }
+  ]
+}

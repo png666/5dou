@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WDNotLoginData">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rent_none" translatesAutoresizingMaskIntoConstraints="NO" id="ip0-Yo-1WM">
+                    <rect key="frame" x="127" y="213.5" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="5DX-ve-VJU"/>
+                        <constraint firstAttribute="height" constant="120" id="Jem-q2-Wh2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="任务已恭候小主多时，就等您翻牌喽～" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-w2-35c">
+                    <rect key="frame" x="75" y="343.5" width="225.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQI-UA-PxI">
+                    <rect key="frame" x="192.5" y="395" width="132.5" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="zcz-bj-Lbq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" red="0.5450980392" green="0.3411764706" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLo-fI-1Cu">
+                    <rect key="frame" x="50" y="395" width="132.5" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="uks-of-7Pz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" red="0.99215686274509807" green="0.73333333333333328" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="YQI-UA-PxI" firstAttribute="top" secondItem="3qR-w2-35c" secondAttribute="bottom" constant="35.5" id="0k0-iZ-v81"/>
+                <constraint firstItem="3qR-w2-35c" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9m6-To-wTa"/>
+                <constraint firstItem="3qR-w2-35c" firstAttribute="top" secondItem="ip0-Yo-1WM" secondAttribute="bottom" constant="10" id="BCE-7u-ZVH"/>
+                <constraint firstItem="YQI-UA-PxI" firstAttribute="leading" secondItem="WLo-fI-1Cu" secondAttribute="trailing" constant="10" id="LOv-od-snJ"/>
+                <constraint firstItem="YQI-UA-PxI" firstAttribute="width" secondItem="WLo-fI-1Cu" secondAttribute="width" id="Uzn-Ee-gdB"/>
+                <constraint firstItem="ip0-Yo-1WM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vwh-hh-0Gc"/>
+                <constraint firstItem="ip0-Yo-1WM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-60" id="czW-Qa-52g"/>
+                <constraint firstAttribute="trailing" secondItem="YQI-UA-PxI" secondAttribute="trailing" constant="50" id="iyB-R9-0KM"/>
+                <constraint firstItem="WLo-fI-1Cu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="wK5-wY-JoI"/>
+                <constraint firstItem="WLo-fI-1Cu" firstAttribute="top" secondItem="3qR-w2-35c" secondAttribute="bottom" constant="35.5" id="xnu-wD-aeq"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="ip0-Yo-1WM" id="Ki2-tS-t2a"/>
+                <outlet property="infoLabel" destination="3qR-w2-35c" id="hPQ-Jn-mkF"/>
+                <outlet property="loginBtn" destination="YQI-UA-PxI" id="bII-Ba-Nys"/>
+                <outlet property="resgisterBtn" destination="WLo-fI-1Cu" id="rnL-6o-vJX"/>
+            </connections>
+            <point key="canvasLocation" x="-451" y="-3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="rent_none" width="113" height="113"/>
+    </resources>
+</document>
