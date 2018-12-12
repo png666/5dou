@@ -221,7 +221,7 @@ static NSString *IDFA = @"IDFA";
 }
 
 
-///判断是否为纯汉字
+///判断是否为纯汉字 
 + (BOOL)judgeChineseWord:(NSString *)text{
     
     NSString *psdZZ = @"[^\u4e00-\u9fa5]";
